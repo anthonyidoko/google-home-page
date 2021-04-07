@@ -13,3 +13,42 @@ img{
     padding: 20px;
     
 }
+
+.top{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+.top img{
+    width: 490px;
+    height: 110px;
+}
+
+.search input{
+    display: flex;
+   border-radius: 35px;
+    width: 85vw;
+    margin: 0px auto;
+    height: 50px;
+    border: 0.1px solid gray;
+}
+
+.button{
+    display: flex;
+    padding: 30px;    
+    justify-content: center;
+    
+}
+
+button{
+    background-color: rgba(248, 244, 244, 0.993);
+    border:1px solid rgba(248, 244, 244, 0.993);
+    border-radius: 1px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color:rgb(54, 52, 52)
+}
+#second-button{
+    margin-left: 15px;
+}
