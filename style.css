@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    height: 25px;
+    padding: 20px;
+    
+}
