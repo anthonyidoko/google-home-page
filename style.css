@@ -30,6 +30,7 @@ main{
     flex-direction: column;
     padding-left: 30%;
     position: relative;
+    padding-bottom: 180px;
 
 }
 
@@ -78,15 +79,17 @@ main{
     margin-left: 3sx;
 }
 
-footer{
-    /*padding-top: 140px;
-    font-size: small;
+footer{    
+    /*font-size: small;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;*/
+    width: 100vw;
+    margin-left: -10px;
+    background-color: rgb(247, 242, 242);
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(3, 30px);
+    grid-template-rows: repeat(3, 30px 30px 30px);
     grid-template-areas: 
     "n n n n n n n n n n n n"
     "c c c c c c c c c c c c"
@@ -99,11 +102,37 @@ footer .nigeria{
     padding-bottom: 10px;
     border-bottom: 1px solid gray;*/
     grid-area: n;
+    border-bottom: 1px solid gray;
+    padding-left: 20px;
+
 }
 
-footer.carbon-message{
-    /*padding-top: 10px;
-    justify-self: center;*/
-    grid-area: c;
+.carbon-message{
+    grid-area: c; 
+    padding-top: 5px; 
+    padding-left: 20px; 
+}
+
+.listed-items{
+    grid-area: l;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-small;
+    flex-direction: row;
+    margin-left: -20px;
+}
+
+.second-group{
+    margin-right: auto;
+}
+
+.listed-items ul li{
+    list-style: none;
+    display: inline;    
+}
+
+footer .listed-items ul li a{
+    text-decoration: none;
+    padding: 2px;
 }
 
