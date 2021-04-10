@@ -1,54 +1,109 @@
-nav{
+.header ul{
     display: flex;
     justify-content: flex-end;
 }
-nav a{
-    padding: 20px;
+
+.header ul li {
+    list-style: none;
+    display: inline;
+}
+.header ul li a{
     text-decoration: none;
-    color: black;
+    padding: 10px;
+}
+ul img{
+    width: 15px;
+    height: 18px;
+    margin-bottom: -5px;   
+}
+#initial{
+    color: white;
+    background-color: purple;
+    border-radius: 50%;
+    padding: 3px 5px;
+    margin-left: 5px;
 }
 
-img{
-    height: 25px;
-    padding: 20px;
-    
-}
-
-.top{
+main{
+    padding-top: 70px;
     display: flex;
-    width: 50%;
-    margin: auto;
-    justify-content: center;
-}
-.top img{
-    width: 490px;
-    height: 110px;
+    flex-direction: column;
+    padding-left: 30%;
+    position: relative;
+
 }
 
-.search input{
-    display: flex;
-   border-radius: 35px;
-    width: 85vw;
-    margin: 0px auto;
-    height: 50px;
-    border: 0.1px solid gray;
+#google-logo{
+    width: 120px;
 }
 
+.search{
+    position: absolute;
+    top: 108px;
+    left: 12%;
+}
+.search input{ 
+    border: 1px solid rgb(223, 217, 217);
+    border-radius: 50px;
+    padding: 0px 20px;
+    padding-left: 25px;
+    outline: white;
+    height: 20px;
+    margin-left: 15%;
+}
+
+.fa-search{
+    position: absolute;
+    top: 4px;
+    left: 40px;
+}
+.fa-microphone{
+    position: absolute;
+    right: -25px;
+    top: 2px;
+}
 .button{
+    padding-top: 15px;
     display: flex;
-    padding: 30px;    
-    justify-content: center;
-    
+    margin-left: -1%;
+}
+.button button{
+    border-radius: 3px;
+    outline: white;
+    border: 1px solid white;
+    font-size: x-small;
 }
 
-button{
-    background-color: rgba(248, 244, 244, 0.993);
-    border:1px solid rgba(248, 244, 244, 0.993);
-    border-radius: 1px;
-    padding: 10px 15px;
-    font-size: 16px;
-    color:rgb(54, 52, 52)
-}
 #second-button{
-    margin-left: 15px;
+    margin-left: 3sx;
 }
+
+footer{
+    /*padding-top: 140px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas: 
+    "n n n n n n n n n n n n"
+    "c c c c c c c c c c c c"
+    "l l l l l l l l l l l l";
+}
+
+footer .nigeria{
+    /*width: 100%;
+    height: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;*/
+    grid-area: n;
+}
+
+footer.carbon-message{
+    /*padding-top: 10px;
+    justify-self: center;*/
+    grid-area: c;
+}
+
