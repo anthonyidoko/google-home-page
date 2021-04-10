@@ -110,26 +110,31 @@ footer .nigeria{
 .carbon-message{
     grid-area: c; 
     padding-top: 5px; 
-    padding-left: 20px; 
+    padding-left: 20%;
+    font-size: 0.7rem; 
 }
 
 .listed-items{
     grid-area: l;
     display: flex;
-    justify-content: space-between;
     font-size: xx-small;
     flex-direction: row;
     margin-left: -20px;
+    justify-content: space-between;
 }
 
 .second-group{
-    margin-right: auto;
+    margin-left: -30px; 
+    padding-right: 5px; 
 }
 
 .listed-items ul li{
     list-style: none;
     display: inline;    
 }
+ .fa-envira{
+     color:green;
+ }
 
 footer .listed-items ul li a{
     text-decoration: none;
