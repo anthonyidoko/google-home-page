@@ -1,3 +1,7 @@
+body{
+    height: auto;
+    width: auto;
+}
 .header ul{
     display: flex;
     justify-content: flex-end;
@@ -92,6 +96,7 @@ footer{
      
     width: 100vw;
     height: 75px;
+    margin-top: 135px;
     margin-left: -10px;
     background-color: rgb(238, 235, 235);
     display: grid;
@@ -129,7 +134,7 @@ footer .nigeria{
 
 .second-group{
     margin-left: -30px; 
-    padding-right: 5px; 
+    padding-right: 10px; 
 }
 
 .listed-items ul li{
@@ -170,20 +175,23 @@ footer .listed-items ul li a{
         margin-left: 5px;
     }
     main{
-        padding-bottom: 150px;
+        padding-bottom: 18px;
     }
+
     .carbon-message{
         grid-area: c;  
         padding-left: 30%;
         font-size: 0.7rem;
     }
-    
-.fa-search{
-    top: -19px;
-    left: 110px;
-}
-.fa-microphone{
+        
+    .fa-search{
         top: -19px;
-        left: 515px;
+        left: 110px;
     }
+
+    .fa-microphone{
+            top: -19px;
+            left: 515px;
+        }
+    
 }
