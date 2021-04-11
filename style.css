@@ -150,7 +150,7 @@ footer .listed-items ul li a{
     padding: 2px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:700px) {
     .search input{
         justify-self: flex-end;
         width: 380px;
