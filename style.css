@@ -58,13 +58,18 @@ main{
 
 .fa-search{
     position: absolute;
-    top: 4px;
-    left: 40px;
+    top: -20px;
+    left: 30px;
+    z-index: 10;
+    font-size: x-small;
+    color: rgb(172, 167, 167);
 }
 .fa-microphone{
     position: absolute;
-    right: -25px;
-    top: 2px;
+    left: 220px;
+    top: -20px;
+    font-size: x-small;
+    color: rgb(85, 122, 231);
 }
 .button{
     padding-top: 15px;
@@ -140,7 +145,6 @@ footer .listed-items ul li a{
     padding: 2px;
 }
 
-
 @media screen and (min-width:768px) {
     .search input{
         justify-self: flex-end;
@@ -166,11 +170,20 @@ footer .listed-items ul li a{
         margin-left: 5px;
     }
     main{
-        padding-bottom: 140px;
+        padding-bottom: 150px;
     }
     .carbon-message{
         grid-area: c;  
         padding-left: 30%;
         font-size: 0.7rem;
+    }
+    
+.fa-search{
+    top: -19px;
+    left: 110px;
+}
+.fa-microphone{
+        top: -19px;
+        left: 515px;
     }
 }
