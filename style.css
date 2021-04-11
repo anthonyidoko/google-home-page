@@ -25,13 +25,13 @@ ul img{
 }
 
 main{
-    padding-top: 70px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     padding-left: 30%;
     position: relative;
-    padding-bottom: 180px;
-
+    padding-bottom: 160px;
+    justify-content: center;
 }
 
 #google-logo{
@@ -51,6 +51,9 @@ main{
     outline: white;
     height: 20px;
     margin-left: 15%;
+    position: absolute;
+    top: -26px;
+    left: 25px;
 }
 
 .fa-search{
@@ -66,7 +69,8 @@ main{
 .button{
     padding-top: 15px;
     display: flex;
-    margin-left: -1%;
+    margin-left: -10%;
+    margin-top: 10px;
 }
 .button button{
     border-radius: 3px;
@@ -76,20 +80,18 @@ main{
 }
 
 #second-button{
-    margin-left: 3sx;
+    margin-left: 3px;
 }
 
-footer{    
-    /*font-size: small;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;*/
+footer{ 
+     
     width: 100vw;
+    height: 75px;
     margin-left: -10px;
-    background-color: rgb(247, 242, 242);
+    background-color: rgb(238, 235, 235);
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(3, 30px 30px 30px);
+    grid-template-rows: repeat(3, 25px 25px 25px);
     grid-template-areas: 
     "n n n n n n n n n n n n"
     "c c c c c c c c c c c c"
@@ -97,21 +99,18 @@ footer{
 }
 
 footer .nigeria{
-    /*width: 100%;
-    height: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;*/
+    font-size: small;
+    padding: 0px 20px;
     grid-area: n;
-    border-bottom: 1px solid gray;
-    padding-left: 20px;
-
+    border-bottom: 1px solid rgb(216, 213, 213);
 }
 
 .carbon-message{
     grid-area: c; 
     padding-top: 5px; 
-    padding-left: 20%;
+    padding-left: 30%;
     font-size: 0.7rem; 
+    
 }
 
 .listed-items{
@@ -141,3 +140,37 @@ footer .listed-items ul li a{
     padding: 2px;
 }
 
+
+@media screen and (min-width:768px) {
+    .search input{
+        justify-self: flex-end;
+        width: 380px;
+        height: 27px;
+        margin-left: 80px;  
+    }
+    #google-logo{
+        width: 170px;
+        margin-left: 10%;
+        margin-top: -30px;
+        padding: 5px;
+    }
+    .button{
+        margin-top: 30px;
+    }
+    .button button{
+        font-size: x-small;
+        padding: 6px;
+        margin-left: 15%;
+    }
+    #second-button{
+        margin-left: 5px;
+    }
+    main{
+        padding-bottom: 140px;
+    }
+    .carbon-message{
+        grid-area: c;  
+        padding-left: 30%;
+        font-size: 0.7rem;
+    }
+}
