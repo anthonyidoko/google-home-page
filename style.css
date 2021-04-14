@@ -55,7 +55,7 @@ main div{
 }
 .input{
     border: 1px solid rgb(145, 139, 139);
-    width: 85vw;
+    width: 75vw;
     border-radius: 50px;
     height: 30px;
     outline: inherit;
